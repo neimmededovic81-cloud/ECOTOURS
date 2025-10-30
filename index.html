@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Tours | Siguran put do nezaboravnih destinacija</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background-color: #f5f9ff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,74,173,0.85), rgba(0,74,173,0.85)),
+      url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px 80px;
+      position: relative;
+    }
+
+    header img {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 130px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+      background: white;
+      padding: 5px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-top: 160px;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #ffeb80;
+      font-weight: 500;
+    }
+
+    nav {
+      background-color: #004aad;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    h2 {
+      color: #004aad;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .about p { font-size: 1.1em; }
+
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .offer {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .offer:hover { transform: translateY(-5px); }
+
+    .offer img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .offer-content {
+      padding: 20px;
+    }
+
+    .offer-content h3 {
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    .offer-content p {
+      font-size: 0.95em;
+      margin-bottom: 8px;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .member {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .member:hover { transform: translateY(-5px); }
+
+    .member h4 {
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #004aad, #ffcc00);
+      color: white;
+      text-align: center;
+      border-radius: 15px;
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact p { font-size: 1.1em; margin-bottom: 10px; }
+
+    footer {
+      background-color: #00337a;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
+
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      cursor: pointer;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    #topBtn:hover {
+      background-color: #ffcc00;
+      color: #004aad;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo1.png" alt="Eco Tours Logo">
+    <h1>Eco Tours</h1>
+    <p>Siguran put do nezaboravnih destinacija</p>
+  </header>
+
+  <nav>
+    <a href="#onama">O nama</a>
+    <a href="#ponude">Ponude</a>
+    <a href="#tim">Naš tim</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="onama">
+    <h2>🌍 O nama</h2>
+    <div class="about">
+      <p><strong>Eco Tours</strong> je turistička agencija specijalizovana za organizaciju grupnih, porodičnih i avanturističkih putovanja. Naša misija je pružiti svakom putniku sigurno, udobno i nezaboravno iskustvo, uz profesionalnu organizaciju i pažljivo odabrane destinacije širom Bosne i Hercegovine i Evrope.</p>
+      <p>Bilo da se radi o planinskom odmoru, vikend izletu ili evropskom putovanju, naš tim se brine da svako putovanje postane doživljaj za pamćenje.</p>
+    </div>
+  </section>
+
+  <section id="ponude">
+    <h2>✈️ Naše ponude</h2>
+    <div class="offers">
+
+      <div class="offer">
+        <img src="bjelasnica1.jpg" alt="Bjelašnica">
+        <div class="offer-content">
+          <h3>Čarolija Bjelašnice</h3>
+          <p><strong>Lokacija:</strong> Bjelašnica, Bosna i Hercegovina</p>
+          <p><strong>Trajanje:</strong> 3 dana / 2 noći</p>
+          <p><strong>Cijena:</strong> 190 KM po osobi</p>
+          <p><strong>Minimalno:</strong> 10 putnika</p>
+          <p><strong>Plan putovanja:</strong><br>
+          Dan 1: Dolazak i večera uz vatru.<br>
+          Dan 2: Planinarenje i vožnja kvadovima.<br>
+          Dan 3: Doručak i povratak prema Sarajevu.</p>
+        </div>
+      </div>
+
+      <div class="offer">
+        <img src="sutjeska1.jpg" alt="NP Sutjeska">
+        <div class="offer-content">
+          <h3>Eko avantura – Nacionalni park Sutjeska</h3>
+          <p><strong>Lokacija:</strong> Tjentište, BiH</p>
+          <p><strong>Trajanje:</strong> 4 dana / 3 noći</p>
+          <p><strong>Cijena:</strong> 200 KM po osobi</p>
+          <p><strong>Minimalno:</strong> 12 putnika</p>
+          <p><strong>Plan putovanja:</strong><br>
+          Dan 1: Dolazak i večera u prirodi.<br>
+          Dan 2: Perućica i Trnovačko jezero.<br>
+          Dan 3: Rafting na Tari.<br>
+          Dan 4: Povratak kući.</p>
+        </div>
+      </div>
+
+      <div class="offer">
+        <img src="becbratislava1.jpg" alt="Beč i Bratislava">
+        <div class="offer-content">
+          <h3>Gradski vikend – Beč i Bratislava</h3>
+          <p><strong>Lokacija:</strong> Austrija i Slovačka</p>
+          <p><strong>Trajanje:</strong> 4 dana / 3 noći</p>
+          <p><strong>Cijena:</strong> 450 KM po osobi</p>
+          <p><strong>Minimalno:</strong> 20 putnika</p>
+          <p><strong>Plan putovanja:</strong><br>
+          Dan 1: Dolazak u Beč i večernja šetnja.<br>
+          Dan 2: Obilazak znamenitosti Beča.<br>
+          Dan 3: Izlet u Bratislavu i slobodno vrijeme.<br>
+          Dan 4: Povratak kući uz ručak u prirodi.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="tim">
+    <h2>👥 Naš tim</h2>
+    <div class="team">
+      <div class="member"><h4>Prodaja</h4><p>Aldin Jačević<br>Harun-Ali Garib</p></div>
+      <div class="member"><h4>Sekreterijat</h4><p>Iman Kršo</p></div>
+      <div class="member"><h4>Knjigovodstvo</h4><p>Amra Dautović<br>Naida Agić</p></div>
+      <div class="member"><h4>Marketing</h4><p>Neira Beganović<br>Lejla Kapo</p></div>
+      <div class="member"><h4>Web dizajn</h4><p>Neim Međedović<br>Ajna Đip</p></div>
+      <div class="member"><h4>Nabavka</h4><p>Hajrudin Mahmutović</p></div>
+      <div class="member"><h4>Osoblje</h4><p>Ajdin Čajić</p></div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>📞 Kontakt</h2>
+    <div class="contact">
+      <p>📍 Adresa: Sarajevo, Bosna i Hercegovina</p>
+      <p>☎️ Telefon: +387 61 123 456</p>
+      <p>✉️ Email: eco.tours.ses@gmail.com</p>
+      <p>🌐 Pratite nas: Instagram | Facebook | TikTok</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Eco Tours | Dizajn: Ajna Đip i Neim Međedović
+  </footer>
+
+  <button id="topBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+  <script>
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = () => {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+  </script>
+
+</body>
+</html>
+
